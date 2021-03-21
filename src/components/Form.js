@@ -6,8 +6,8 @@ function Form() {
 
   return (
     <form>
-      <input type="text" value={firstName} />
-      <input type="text" value={lastName} />
+      <input type="text" value={firstName} onChange={event => setFirstName(event.target.value)}/>
+      <input type="text" value={lastName} onChange={event => setLastName(event.target.value)}/>
       <button type="submit">Submit</button>
     </form>
   );
